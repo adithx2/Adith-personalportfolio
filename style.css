@@ -431,11 +431,71 @@ span.multiple-text {
     background: var(--second-bg-color);
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.contact-info {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 4rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.contact-info h3 {
+    font-size: 2.8rem;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.contact-info p {
+    font-size: 1.6rem;
+    color: #cccccc;
     margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.info-item i {
+    font-size: 3rem;
+    color: var(--main-color);
+    background: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--glass-border);
+}
+
+.info-item h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.info-item a,
+.info-item p {
+    font-size: 1.5rem;
+    color: #aaaaaa;
+    transition: 0.3s;
+}
+
+.info-item a:hover {
+    color: var(--main-color);
+}
+
+.contact form {
+    width: 100%;
+    text-align: center;
 }
 
 .contact form .input-box {
