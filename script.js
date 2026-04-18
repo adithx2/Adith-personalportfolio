@@ -18,7 +18,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Contact Form Submit Handler
-window.contactFormSubmitted = function() {
+window.contactFormSubmitted = function () {
     const Toast = Swal.mixin({
         toast: true,
         position: "top-end",
@@ -88,7 +88,7 @@ window.contactFormSubmitted = function() {
         icon: "success",
         title: "Message sent successfully!"
     });
-    
+
     // Reset the form
     document.querySelector('.contact form').reset();
     submitted = false;

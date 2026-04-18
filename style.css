@@ -103,7 +103,6 @@ section {
     position: absolute;
     width: 0;
     height: 2px;
-    background: var(--main-color);
     bottom: -4px;
     left: 0;
     transition: width 0.3s ease;
@@ -147,9 +146,9 @@ span.multiple-text {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 2rem 2.8rem;
     background: var(--main-color);
-    border-radius: 4rem;
+    border-radius: 2rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--bg-color);
@@ -346,11 +345,13 @@ span.multiple-text {
     align-items: center;
     flex-direction: column;
     background: var(--second-bg-color);
+   
 }
 
 .about-content {
     text-align: center;
     max-width: 800px;
+   
 }
 
 .about-content h3 {
@@ -371,7 +372,6 @@ span.multiple-text {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2.5rem;
 }
-
 .skill-box {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
@@ -696,7 +696,7 @@ span.multiple-text {
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 3%;
+        padding: 2rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
@@ -708,14 +708,13 @@ span.multiple-text {
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
-        text-align: center;
+        margin: 4rem 0;
     }
     .home {
         flex-direction: column;
     }
     .home-content h1 {
-        font-size: 4.5rem;
+        font-size: 4.0rem;
     }
     .contact form .input-box input {
         width: 100%;
