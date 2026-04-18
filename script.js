@@ -66,3 +66,19 @@ document.addEventListener('DOMContentLoaded', () => {
     elementsToReveal.forEach(el => el.classList.add('reveal'));
     reveal();
 });
+
+// Contact Form Submit Handler
+window.contactFormSubmitted = function() {
+    Swal.fire({
+        title: "Success!",
+        text: "Your message has been sent successfully. I will get back to you soon!",
+        icon: "success",
+        background: "#131313",
+        color: "#ffffff",
+        confirmButtonColor: "#00eeff"
+    });
+    
+    // Reset the form
+    document.querySelector('.contact form').reset();
+    submitted = false;
+};

@@ -172,7 +172,8 @@
                 </div>
             </div>
 
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSew5yaj9PBe4sRcdIOZB0fKB9HCDwdy4rT0xp-b0YtZQjsauw/formResponse" method="POST" target="_blank">
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { window.contactFormSubmitted(); }"></iframe>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSew5yaj9PBe4sRcdIOZB0fKB9HCDwdy4rT0xp-b0YtZQjsauw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="input-box">
                     <input type="text" name="entry.433376865" placeholder="Full Name" required>
                     <input type="email" name="entry.559237466" placeholder="Email Address" required>
@@ -200,6 +201,11 @@
     <!-- Typed.js for typing animation -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     
+    <!-- SweetAlert2 for nice popups -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>var submitted = false;</script>
+
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
