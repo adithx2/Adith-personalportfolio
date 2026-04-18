@@ -201,6 +201,25 @@ span.multiple-text {
     border: 0.2rem solid var(--main-color);
 }
 
+.btn-group {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    box-shadow: none;
+}
+
+.btn-secondary:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
 .home-img {
     position: relative;
     width: 400px;
