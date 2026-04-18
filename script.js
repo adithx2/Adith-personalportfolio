@@ -69,13 +69,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Contact Form Submit Handler
 window.contactFormSubmitted = function() {
-    Swal.fire({
-        title: "Success!",
-        text: "Your message has been sent successfully. I will get back to you soon!",
-        icon: "success",
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 4000,
+        timerProgressBar: true,
         background: "#131313",
         color: "#ffffff",
-        confirmButtonColor: "#00eeff"
+        iconColor: "#00eeff",
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+
+    Toast.fire({
+        icon: "success",
+        title: "Message sent successfully!"
     });
     
     // Reset the form
