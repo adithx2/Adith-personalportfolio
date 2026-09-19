@@ -57,6 +57,7 @@ section {
     width: 100%;
     padding: 2rem 9%;
     background: rgba(8, 8, 8, 0.8);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -89,7 +90,7 @@ section {
     cursor: pointer;
 }
 
-.navbar a {
+.navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -212,7 +213,7 @@ span.multiple-text {
     font-weight: 500;
     color: var(--text-color);
     margin-bottom: 2rem;
-    backdrop-filter: blur(10px);
+    
 }
 
 .mega-title {
@@ -225,7 +226,7 @@ span.multiple-text {
 
 .gradient-text {
     background: linear-gradient(to right, var(--main-color), var(--secondary-accent));
-    -webkit-background-clip: text;
+   
     -webkit-text-fill-color: transparent;
 }
 
@@ -379,7 +380,7 @@ span.multiple-text {
     border-radius: 2rem;
     text-align: center;
     transition: 0.5s ease;
-    backdrop-filter: blur(10px);
+   
 }
 
 .skill-box:hover {
@@ -492,7 +493,7 @@ span.multiple-text {
     border-radius: 2rem;
     text-align: center;
     transition: 0.5s ease;
-    backdrop-filter: blur(10px);
+    
 }
 
 .service-box:hover {
@@ -537,7 +538,6 @@ span.multiple-text {
     border: 1px solid var(--glass-border);
     padding: 4rem;
     border-radius: 2rem;
-    backdrop-filter: blur(10px);
 }
 
 .contact-info h3 {
