@@ -3,7 +3,6 @@ import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
 import Admin from '../models/Admin.js';
 
-// In-memory admin store fallback when local MongoDB is not running
 export const inMemoryAdmins = [];
 
 const getJwtSecret = () => {
@@ -26,7 +25,7 @@ export const registerAdmin = async (req, res) => {
       });
     }
 
-    const configuredSecret = process.env.ADMIN_SECRET_KEY || 'adith2026';
+    const configuredSecret = process.env.ADMIN_SECRET_KEY
     if (!adminSecretKey || adminSecretKey.trim() !== configuredSecret) {
       return res.status(403).json({
         success: false,
@@ -231,9 +230,7 @@ export const loginAdmin = async (req, res) => {
   }
 };
 
-// @desc    Get current logged in admin
-// @route   GET /api/auth/me
-// @access  Private (Admin)
+
 export const getMe = async (req, res) => {
   try {
     return res.status(200).json({
