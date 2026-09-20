@@ -19,7 +19,7 @@ const app = express();
 // Security & Middleware
 app.use(helmet());
 app.use(cors({
-  origin: ['http://localhost:3000','http://localhost:5173', 'https://adithh.vercel.app/'],
+  origin: ['http://localhost:3000','http://localhost:5173', 'https://adithh.vercel.app'],
   credentials: true,
 }));
 app.use(express.json({ limit: '1mb' }));
