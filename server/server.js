@@ -19,7 +19,7 @@ const app = express();
 // Security & Middleware
 app.use(helmet());
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173'],
+  origin: ['http://localhost:3000','http://localhost:5173', 'https://adith-personalportfolio-6h2z.vercel.app'],
   credentials: true,
 }));
 app.use(express.json({ limit: '1mb' }));

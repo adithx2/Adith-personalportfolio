@@ -22,6 +22,7 @@ export const protect = async (req, res, next) => {
 
       if (isMongoConnected) {
         req.admin = await Admin.findById(decoded.id).select('-password');
+
         if (!req.admin) {
           return res.status(401).json({
             success: false,

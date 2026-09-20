@@ -1,6 +1,6 @@
-﻿const TOKEN_KEY = 'adith_admin_token';
+const TOKEN_KEY = 'adith_admin_token';
 const ADMIN_KEY = 'adith_admin_user';
-export const API_BASE = 'http://localhost:5000/api';
+export const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 export const getToken = () => {
   return localStorage.getItem(TOKEN_KEY);
