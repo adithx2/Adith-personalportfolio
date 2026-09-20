@@ -171,7 +171,7 @@ const Hero = () => {
             </div>
 
             <div className="hidden sm:block absolute top-1/2 -right-8 z-20 animate-float" style={{ animationDuration: '9s', animationDelay: '2s' }}>
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl glass-card border border-green-500/40 text-green-400 text-xs font-mono shadow-md">
+              <div className="flex items-center gap-2 px-4 py-1.5 rounded-xl glass-card border border-green-500/40 text-green-400 text-xs font-mono shadow-md">
                 <i className="devicon-mongodb-plain colored text-base"></i>
                 <span>MongoDB</span>
               </div>
@@ -292,18 +292,6 @@ const Hero = () => {
               </div>
             </div>
           </motion.div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 pointer-events-none">
-          <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Scroll Down</span>
-          <div className="w-5 h-9 rounded-full border-2 border-white/20 flex justify-center p-1">
-            <motion.div
-              animate={{ y: [0, 12, 0] }}
-              transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-              className="w-1.5 h-1.5 rounded-full bg-cyan-accent shadow-glow-cyan"
-            />
-          </div>
         </div>
       </div>
     </section>
