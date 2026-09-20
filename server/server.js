@@ -59,6 +59,15 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get('/', (req , res) => {
+
+  res.status(200).json({
+
+    success : true,
+    message : "Server Running Successfully"
+  })
+})
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
