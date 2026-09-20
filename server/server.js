@@ -39,6 +39,15 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+app.get('/', (req , res) => {
+
+  res.status(200).json({
+
+    success : true,
+    message : "Server Running Successfully"
+  })
+})
+
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/contact', contactRoutes);
@@ -58,15 +67,6 @@ app.use((err, req, res, next) => {
     error: err.message || 'Internal server error',
   });
 });
-
-app.get('/', (req , res) => {
-
-  res.status(200).json({
-
-    success : true,
-    message : "Server Running Successfully"
-  })
-})
 
 const PORT = process.env.PORT || 5000;
 
