@@ -232,7 +232,7 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="you@example.com"
+                    placeholder="your@example.com"
                     className="w-full px-4 py-3 rounded-xl bg-dark-bg/80 border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-cyan-accent focus:ring-1 focus:ring-cyan-accent transition-all"
                   />
                 </div>
